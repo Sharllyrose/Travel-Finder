@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "name": "Bali",
+      "country": "Indonesia",
+      "continent": "Asia",
+      "description": "Known for its beautiful beaches, vibrant culture, and lush green rice terraces. Bali offers a perfect mix of relaxation and adventure.",
+      "budget": "Medium",
+      "temperature": "Hot",
+      "activities": ["Beach", "Cultural Experience", "Hiking", "Surfing"],
+      "bestTimeToVisit": "April to October (dry season)",
+      "image": "https://source.unsplash.com/1600x900/?bali"
+    },
+    {
+      "id": 2,
+      "name": "Paris",
+      "country": "France",
+      "continent": "Europe",
+      "description": "The City of Light, famous for its iconic landmarks, world-class museums, and exquisite cuisine. Paris is a destination for romance and culture.",
+      "budget": "High",
+      "temperature": "Moderate",
+      "activities": ["City Exploration", "Cultural Experience", "Food Tasting"],
+      "bestTimeToVisit": "April to June, September to October",
+      "image": "https://source.unsplash.com/1600x900/?paris"
+    },
+    {
+      "id": 3,
+      "name": "Queenstown",
+      "country": "New Zealand",
+      "continent": "Oceania",
+      "description": "Adventure capital of New Zealand, surrounded by majestic mountains and set on the shores of crystal clear Lake Wakatipu.",
+      "budget": "High",
+      "temperature": "Cold",
+      "activities": ["Hiking", "Winter Sports", "Adventure", "Wildlife"],
+      "bestTimeToVisit": "December to February (summer), June to September (skiing)",
+      "image": "https://source.unsplash.com/1600x900/?queenstown"
+    },
+    {
+      "id": 4,
+      "name": "Chiang Mai",
+      "country": "Thailand",
+      "continent": "Asia",
+      "description": "A city in mountainous northern Thailand known for its beautiful ancient temples, night markets, and proximity to jungle trekking areas.",
+      "budget": "Low",
+      "temperature": "Hot",
+      "activities": ["Cultural Experience", "Hiking", "City Exploration", "Food Tasting"],
+      "bestTimeToVisit": "November to February (cooler weather)",
+      "image": "https://source.unsplash.com/1600x900/?chiangmai"
+    },
+    {
+      "id": 5,
+      "name": "Cape Town",
+      "country": "South Africa",
+      "continent": "Africa",
+      "description": "A beautiful coastal city with stunning landscapes including Table Mountain, beaches, and nearby wine regions.",
+      "budget": "Medium",
+      "temperature": "Moderate",
+      "activities": ["Beach", "Hiking", "Wildlife", "City Exploration"],
+      "bestTimeToVisit": "March to May, September to November",
+      "image": "https://source.unsplash.com/1600x900/?capetown"
+    },
+    {
+      "id": 6,
+      "name": "Cusco",
+      "country": "Peru",
+      "continent": "South America",
+      "description": "Former capital of the Inca Empire, and gateway to Machu Picchu. Known for its archaeological remains and Spanish colonial architecture.",
+      "budget": "Medium",
+      "temperature": "Moderate",
+      "activities": ["Cultural Experience", "Hiking", "City Exploration"],
+      "bestTimeToVisit": "May to October (dry season)",
+      "image": "https://source.unsplash.com/1600x900/?cusco"
+    },
+    {
+      "id": 7,
+      "name": "Kyoto",
+      "country": "Japan",
+      "continent": "Asia",
+      "description": "Japan's cultural capital, famous for its classical Buddhist temples, gardens, imperial palaces, and traditional wooden houses.",
+      "budget": "High",
+      "temperature": "Moderate",
+      "activities": ["Cultural Experience", "City Exploration", "Food Tasting"],
+      "bestTimeToVisit": "March-May (cherry blossoms), October-November (fall colors)",
+      "image": "https://source.unsplash.com/1600x900/?kyoto"
+    },
+    {
+      "id": 8,
+      "name": "Vancouver",
+      "country": "Canada",
+      "continent": "North America",
+      "description": "A bustling west coast seaport in British Columbia, surrounded by mountains, offering a blend of outdoor activities and urban amenities.",
+      "budget": "High",
+      "temperature": "Moderate",
+      "activities": ["City Exploration", "Hiking", "Winter Sports"],
+      "bestTimeToVisit": "June to September",
+      "image": "https://source.unsplash.com/1600x900/?vancouver"
+    },
+    {
+      "id": 9,
+      "name": "Santorini",
+      "country": "Greece",
+      "continent": "Europe",
+      "description": "Famous for its dramatic views, stunning sunsets, white-washed houses, and blue-domed churches against the backdrop of the Aegean Sea.",
+      "budget": "High",
+      "temperature": "Hot",
+      "activities": ["Beach", "Cultural Experience", "Food Tasting"],
+      "bestTimeToVisit": "April to May, September to October",
+      "image": "https://source.unsplash.com/1600x900/?santorini"
+    },
+    {
+      "id": 10,
+      "name": "Serengeti National Park",
+      "country": "Tanzania",
+      "continent": "Africa",
+      "description": "One of the most famous wildlife conservation areas in the world, known for its annual migration of wildebeest and zebra.",
+      "budget": "High",
+      "temperature": "Hot",
+      "activities": ["Wildlife", "Safari", "Photography"],
+      "bestTimeToVisit": "June to October (dry season, migration)",
+      "image": "https://source.unsplash.com/1600x900/?serengeti"
+    }
+  ]
