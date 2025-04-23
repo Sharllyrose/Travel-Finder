@@ -1,0 +1,279 @@
+/* App.css */
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.app-header p {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #7f8c8d;
+  padding: 20px 0;
+  border-top: 1px solid #ecf0f1;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem;
+  }
+}
+
+/* components/DestinationForm.css */
+.filter-container {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#filter-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.form-buttons {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  #filter-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-buttons {
+    grid-column: 1;
+  }
+}
+
+/* components/DestinationList.css */
+.destinations-container {
+  margin-top: 20px;
+}
+
+.destinations-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.no-destinations {
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* components/DestinationCard.css */
+.destination-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.destination-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+  font-size: 1.4rem;
+}
+
+.card-location {
+  color: #7f8c8d;
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  color: #95a5a6;
+}
+
+.detail-value {
+  font-weight: 600;
+  color: #34495e;
+}
+
+.card-expanded-content {
+  margin: 15px 0;
+  padding-top: 15px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.activities h4, .best-time h4 {
+  margin: 10px 0 5px 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.activities ul {
+  margin: 0 0 15px 0;
+  padding-left: 20px;
+}
+
+.activities li {
+  margin-bottom: 5px;
+}
+
+.btn-more {
+  background-color: transparent;
+  border: 1px solid #3498db;
+  color: #3498db;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-more:hover {
+  background-color: #3498db;
+  color: white;
+}
