@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import './DestinationCard.css';
 
@@ -59,10 +60,61 @@ function DestinationCard({ destination }) {
           onClick={toggleExpanded}
         >
           {expanded ? 'Show Less' : 'Show More'}
+=======
+import React from "react";
+import "./DestinationCard.css";
+
+function getStarRating(rating) {
+    const fullStars = Math.floor(rating);
+    const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+    const emptyStars = 5 - fullStars - halfStar;
+    
+    let starsHtml = '';
+    
+    for (let i = 0; i < fullStars; i++) {
+        starsHtml += <i className="fas fa-star"></i>;
+    }
+    
+    if (halfStar) {
+        starsHtml += <i className="fas fa-star-half-alt"></i>;
+    }
+    
+    for (let i = 0; i < emptyStars; i++) {
+        starsHtml += <i className="far fa-star"></i>;
+    }
+    
+    return starsHtml;
+}
+
+
+const DestinationCard = ({ destination }) => {
+  return (
+    <div className="destination-card">
+      <img
+        src={destination.image}
+        alt={destination.name}
+        className="destination-img"
+      />
+      <div className="destination-info">
+        <h3>{destination.name}</h3>
+        <p className="location">
+          {destination.country}, {destination.continent}
+        </p>
+        <div className="rating">{getStarRating(destination.rating)}</div>
+        <p className="description">{destination.description}</p>
+        <button class="view-btn" data-id="${destination.id}">
+          View Details
+>>>>>>> 6ef2086 (adding files)
         </button>
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
 
 export default DestinationCard;
+=======
+};
+
+export default DestinationCard;
+>>>>>>> 6ef2086 (adding files)
